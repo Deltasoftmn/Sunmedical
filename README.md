@@ -102,6 +102,55 @@ npm run build
 npm start
 ```
 
+## Deployment
+
+### Deploy to Vercel (Recommended for Next.js)
+
+1. **Install Vercel CLI** (optional):
+```bash
+npm i -g vercel
+```
+
+2. **Deploy via Vercel Dashboard**:
+   - Go to [vercel.com](https://vercel.com)
+   - Import your GitHub repository: `https://github.com/Deltasoftmn/Sunmedical.git`
+   - Vercel will automatically detect Next.js and configure the build settings
+   - Click "Deploy"
+
+3. **Deploy via CLI**:
+```bash
+vercel
+```
+
+### Deploy to Netlify
+
+1. Go to [netlify.com](https://netlify.com)
+2. Connect your GitHub repository
+3. Build settings:
+   - Build command: `npm run build`
+   - Publish directory: `.next`
+4. Click "Deploy site"
+
+### Deploy to Other Platforms
+
+The project can be deployed to any platform that supports Next.js:
+- **Railway**: Connect GitHub repo and deploy
+- **Render**: Connect GitHub repo and deploy
+- **DigitalOcean App Platform**: Connect GitHub repo and deploy
+- **AWS Amplify**: Connect GitHub repo and deploy
+
+### Environment Variables
+
+If you need to add environment variables, create a `.env.local` file (not committed to git):
+```
+# Example
+NEXT_PUBLIC_API_URL=your_api_url
+```
+
+## Repository
+
+GitHub: [https://github.com/Deltasoftmn/Sunmedical.git](https://github.com/Deltasoftmn/Sunmedical.git)
+
 ## License
 
 © 2025 Sun Medical Center
