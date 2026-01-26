@@ -11,25 +11,9 @@ export default function Navigation() {
   return (
     <nav className="bg-primary-blue text-white sticky top-0 z-50 shadow-md">
       <div className="container mx-auto px-4">
-        <div className="relative flex items-center justify-between h-16">
-          {/* Left Navigation */}
-          <div className="hidden md:flex items-center space-x-4 lg:space-x-6 flex-1">
-            <a href="#discover" className="hover:text-primary-yellow transition flex items-center whitespace-nowrap">
-              МАНАЙ ЭМНЭЛЭГ
-              <ChevronDown className="ml-1 h-4 w-4" />
-            </a>
-            <a href="#services" className="hover:text-primary-yellow transition flex items-center whitespace-nowrap">
-              ЭМЧИЛГЭЭ ҮЙЛЧИЛГЭЭ
-              <ChevronDown className="ml-1 h-4 w-4" />
-            </a>
-            <a href="#preventive" className="hover:text-primary-yellow transition flex items-center whitespace-nowrap">
-              УРЬДЧИЛАН СЭРГИЙЛЭХ ҮЗЛЭГ
-              <ChevronDown className="ml-1 h-4 w-4" />
-            </a>
-          </div>
-
-          {/* Logo - Centered */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo - Left */}
+          <div className="flex items-center flex-shrink-0">
             <a href="/" className="flex items-center">
               {!logoError ? (
                 <div className="relative h-10 w-auto bg-white rounded-lg px-2 py-1 flex items-center">
@@ -52,21 +36,35 @@ export default function Navigation() {
             </a>
           </div>
 
-          {/* Right Navigation */}
-          <div className="hidden md:flex items-center justify-end space-x-4 flex-1">
-            <a href="#contact" className="hover:text-primary-yellow transition flex items-center whitespace-nowrap">
+          {/* Navigation Links - Center/Right */}
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-6 flex-1 justify-center">
+            <a href="#discover" className="hover:text-primary-yellow transition flex items-center whitespace-nowrap text-sm lg:text-base">
+              МАНАЙ ЭМНЭЛЭГ
+              <ChevronDown className="ml-1 h-4 w-4" />
+            </a>
+            <a href="#services" className="hover:text-primary-yellow transition flex items-center whitespace-nowrap text-sm lg:text-base">
+              ЭМЧИЛГЭЭ ҮЙЛЧИЛГЭЭ
+              <ChevronDown className="ml-1 h-4 w-4" />
+            </a>
+            <a href="#preventive" className="hover:text-primary-yellow transition flex items-center whitespace-nowrap text-sm lg:text-base">
+              УРЬДЧИЛАН СЭРГИЙЛЭХ ҮЗЛЭГ
+              <ChevronDown className="ml-1 h-4 w-4" />
+            </a>
+            <a href="#contact" className="hover:text-primary-yellow transition flex items-center whitespace-nowrap text-sm lg:text-base">
               ХОЛБОО БАРИХ
               <ChevronDown className="ml-1 h-4 w-4" />
             </a>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-white"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          <div className="md:hidden flex items-center">
+            <button
+              className="text-white"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
