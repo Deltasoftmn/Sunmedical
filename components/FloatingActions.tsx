@@ -30,7 +30,7 @@ export default function FloatingActions() {
         href={FB_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex h-12 w-12 items-center justify-center rounded-full bg-[#1877F2] text-white shadow-lg hover:bg-[#166FE5] hover:scale-110 transition-all duration-300"
+        className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-blue text-white shadow-lg hover:bg-primary-darkBlue hover:scale-110 transition-all duration-300"
         aria-label="Sun Medical Center Facebook"
       >
         <FacebookIcon className="h-6 w-6" />
