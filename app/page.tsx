@@ -1,10 +1,8 @@
 import Navigation from '@/components/Navigation'
 import HeroSection from '@/components/HeroSection'
-import StatisticsSection from '@/components/StatisticsSection'
 import AboutSection from '@/components/AboutSection'
 import VisionSection from '@/components/VisionSection'
 import PreventiveCheckupSection from '@/components/PreventiveCheckupSection'
-import ServiceStatsSection from '@/components/ServiceStatsSection'
 import EquipmentSection from '@/components/EquipmentSection'
 import PartnersSection from '@/components/PartnersSection'
 import ContactSection from '@/components/ContactSection'
@@ -17,11 +15,9 @@ export default function Home() {
     <main className="min-h-screen">
       <Navigation />
       <HeroSection />
-      <AnimateIn animation="fade-in-up"><StatisticsSection /></AnimateIn>
       <AnimateIn animation="fade-in-up"><AboutSection /></AnimateIn>
       <AnimateIn animation="fade-in-up"><VisionSection /></AnimateIn>
       <AnimateIn animation="fade-in-up"><PreventiveCheckupSection /></AnimateIn>
-      <AnimateIn animation="fade-in-up"><ServiceStatsSection /></AnimateIn>
       <AnimateIn animation="fade-in-up"><EquipmentSection /></AnimateIn>
       <AnimateIn animation="fade-in-up"><PartnersSection /></AnimateIn>
       <AnimateIn animation="fade-in-up"><ContactSection /></AnimateIn>
