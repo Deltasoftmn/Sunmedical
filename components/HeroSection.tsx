@@ -14,7 +14,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-primary-blue/70" />
 
       <div className="container mx-auto px-4 relative z-10 py-20">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center animate-fade-in-down">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Sun Medical Center
             <br />
@@ -42,21 +42,21 @@ export default function HeroSection() {
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             <a
               href="#preventive"
-              className="bg-white text-primary-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition flex items-center"
+              className="bg-white text-primary-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 hover:-translate-y-0.5 transition-all duration-300 flex items-center"
             >
               Үйлчилгээ олох
               <span className="ml-2">→</span>
             </a>
             <a
               href="#preventive"
-              className="bg-white text-primary-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition flex items-center"
+              className="bg-white text-primary-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 hover:-translate-y-0.5 transition-all duration-300 flex items-center"
             >
               Эрүүл мэндийн үзлэг
               <span className="ml-2">→</span>
             </a>
             <a
               href="#contact"
-              className="bg-white text-primary-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition flex items-center"
+              className="bg-white text-primary-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 hover:-translate-y-0.5 transition-all duration-300 flex items-center"
             >
               Мэргэжилтний зөвлөгөө
               <span className="ml-2">→</span>

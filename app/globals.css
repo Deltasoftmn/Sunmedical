@@ -19,3 +19,16 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-fade-in-up,
+  .animate-fade-in,
+  .animate-fade-in-down,
+  .animate-slide-in-left {
+    animation: none;
+    opacity: 1;
+  }
+}

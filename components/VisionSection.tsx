@@ -48,7 +48,7 @@ export default function VisionSection() {
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow"
+                  className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
                 >
                   <div className="bg-primary-blue text-white w-16 h-16 rounded-full flex items-center justify-center mb-4">
                     <Icon className="h-8 w-8" />

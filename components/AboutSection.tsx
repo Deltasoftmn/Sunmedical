@@ -43,15 +43,15 @@ export default function AboutSection() {
 
           {/* Values */}
           <div className="grid md:grid-cols-3 gap-6 mt-12">
-            <div className="text-center p-6 bg-primary-lightBlue rounded-lg">
+            <div className="text-center p-6 bg-primary-lightBlue rounded-lg hover:-translate-y-1 hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-primary-blue mb-2">Анхаарал халамж</h3>
               <p className="text-gray-600">Өвчтөн бүрт зориулсан анхаарал</p>
             </div>
-            <div className="text-center p-6 bg-primary-lightBlue rounded-lg">
+            <div className="text-center p-6 bg-primary-lightBlue rounded-lg hover:-translate-y-1 hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-primary-blue mb-2">Чин сэтгэл</h3>
               <p className="text-gray-600">Сэтгэлээсээ үзүүлсэн халамж</p>
             </div>
-            <div className="text-center p-6 bg-primary-lightBlue rounded-lg">
+            <div className="text-center p-6 bg-primary-lightBlue rounded-lg hover:-translate-y-1 hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-primary-blue mb-2">Тэвчээр</h3>
               <p className="text-gray-600">Ойлголт, энэрэнгүй үйлчилгээ</p>
             </div>

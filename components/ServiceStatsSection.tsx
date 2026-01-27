@@ -79,7 +79,7 @@ export default function ServiceStatsSection() {
           {/* Surgery Statistics */}
           <div className="grid md:grid-cols-2 gap-8">
             {/* 2024 Surgery Stats */}
-            <div className="bg-white rounded-lg shadow-md p-6">
+            <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
               <h3 className="text-2xl font-bold text-primary-blue mb-4">
                 Мэс заслын 2024 оны үзүүлэлт
               </h3>
@@ -94,7 +94,7 @@ export default function ServiceStatsSection() {
             </div>
 
             {/* 2025 Surgery Stats */}
-            <div className="bg-white rounded-lg shadow-md p-6">
+            <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
               <h3 className="text-2xl font-bold text-primary-blue mb-4">
                 Мэс заслын 2025 оны үзүүлэлт
               </h3>

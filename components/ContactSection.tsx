@@ -12,7 +12,7 @@ export default function ContactSection() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-          <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 text-center">
+          <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 text-center hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
             <div className="bg-primary-yellow text-primary-blue w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
               <Phone className="h-8 w-8" />
             </div>
@@ -20,7 +20,7 @@ export default function ContactSection() {
             <p className="text-gray-200">+(976) 7777-7500</p>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 text-center">
+          <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 text-center hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
             <div className="bg-primary-yellow text-primary-blue w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
               <Mail className="h-8 w-8" />
             </div>
@@ -30,7 +30,7 @@ export default function ContactSection() {
             </p>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 text-center">
+          <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 text-center hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
             <div className="bg-primary-yellow text-primary-blue w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
               <MapPin className="h-8 w-8" />
             </div>
@@ -40,7 +40,7 @@ export default function ContactSection() {
             </p>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 text-center">
+          <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 text-center hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
             <div className="bg-primary-yellow text-primary-blue w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
               <Clock className="h-8 w-8" />
             </div>

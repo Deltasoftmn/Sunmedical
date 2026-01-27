@@ -37,7 +37,7 @@ export default function PartnersSection() {
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow border border-gray-200 text-center flex flex-col items-center justify-center min-h-[140px]"
+                className="bg-gray-50 rounded-lg p-6 hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-gray-200 text-center flex flex-col items-center justify-center min-h-[140px]"
               >
                 <div className="relative w-full h-16 mb-3 flex items-center justify-center">
                   <Image

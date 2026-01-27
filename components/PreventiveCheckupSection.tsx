@@ -66,9 +66,15 @@ export default function PreventiveCheckupSection() {
             <h2 className="text-3xl md:text-4xl font-bold text-primary-blue mb-4">
               "УРЬДЧИЛАН СЭРГИЙЛЭХ ҮЗЛЭГИЙН БАГЦ"
             </h2>
-            <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+            <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-8">
               Байгууллагын ажилчдын эрүүл мэндийн урьдчилан сэргийлэх үзлэгийн багц
             </p>
+            <a
+              href="/bagts"
+              className="inline-block bg-primary-yellow text-primary-blue font-bold text-xl md:text-2xl px-12 py-5 rounded-xl hover:bg-primary-yellow/90 hover:scale-105 shadow-lg transition-all duration-300"
+            >
+              Багц үзэх
+            </a>
           </div>
 
           {/* Why Preventive Checkups */}
@@ -149,7 +155,7 @@ export default function PreventiveCheckupSection() {
                 return (
                   <div
                     key={index}
-                    className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow border border-gray-200"
+                    className="bg-gray-50 rounded-lg p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border border-gray-200"
                   >
                     <div className="bg-primary-lightBlue text-primary-blue w-12 h-12 rounded-full flex items-center justify-center mb-4">
                       <Icon className="h-6 w-6" />
@@ -175,7 +181,7 @@ export default function PreventiveCheckupSection() {
                 return (
                   <div
                     key={index}
-                    className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow text-center"
+                    className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center"
                   >
                     <div className="bg-primary-yellow text-primary-blue w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Icon className="h-8 w-8" />
@@ -191,7 +197,7 @@ export default function PreventiveCheckupSection() {
           </div>
 
           {/* Partnership CTA */}
-          <div className="bg-gradient-to-r from-primary-blue to-primary-darkBlue text-white rounded-lg p-8 text-center">
+          <div id="package-cta" className="bg-gradient-to-r from-primary-blue to-primary-darkBlue text-white rounded-lg p-8 text-center">
             <h3 className="text-2xl font-bold mb-4">
               Хамтран ажиллах санал хүргүүлэх
             </h3>

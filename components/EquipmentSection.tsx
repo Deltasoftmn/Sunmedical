@@ -32,7 +32,7 @@ export default function EquipmentSection() {
           {equipment.map((item, index) => (
             <div
               key={index}
-              className="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition-shadow border border-gray-200"
+              className="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border border-gray-200"
             >
               <div className="relative aspect-video bg-white">
                 <Image

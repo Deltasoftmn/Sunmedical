@@ -1,12 +1,17 @@
 'use client'
 
 import { useState } from 'react'
-import { ChevronDown, Menu, X } from 'lucide-react'
+import { usePathname } from 'next/navigation'
+import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Navigation() {
+  const pathname = usePathname()
+  const isBagts = pathname === '/bagts'
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [logoError, setLogoError] = useState(false)
+
+  const link = (hash: string) => (isBagts ? `/${hash}` : hash)
 
   return (
     <nav className="bg-primary-blue text-white sticky top-0 z-50 shadow-md">
@@ -36,19 +41,26 @@ export default function Navigation() {
             </a>
           </div>
 
-          {/* Navigation Links - Center/Right */}
+          {/* Navigation Links - Center */}
           <div className="hidden md:flex items-center space-x-4 lg:space-x-6 flex-1 justify-center">
-            <a href="#discover" className="hover:text-primary-yellow transition flex items-center whitespace-nowrap text-sm lg:text-base">
+            <a href={link('#discover')} className="hover:text-primary-yellow transition whitespace-nowrap text-sm lg:text-base">
               МАНАЙ ЭМНЭЛЭГ
-              <ChevronDown className="ml-1 h-4 w-4" />
             </a>
-            <a href="#preventive" className="hover:text-primary-yellow transition flex items-center whitespace-nowrap text-sm lg:text-base">
+            <a href={link('#preventive')} className="hover:text-primary-yellow transition whitespace-nowrap text-sm lg:text-base">
               УРЬДЧИЛАН СЭРГИЙЛЭХ ҮЗЛЭГ
-              <ChevronDown className="ml-1 h-4 w-4" />
             </a>
-            <a href="#contact" className="hover:text-primary-yellow transition flex items-center whitespace-nowrap text-sm lg:text-base">
+            <a href={link('#contact')} className="hover:text-primary-yellow transition whitespace-nowrap text-sm lg:text-base">
               ХОЛБОО БАРИХ
-              <ChevronDown className="ml-1 h-4 w-4" />
+            </a>
+          </div>
+
+          {/* Багц CTA - unique styled button */}
+          <div className="hidden md:flex items-center flex-shrink-0">
+            <a
+              href="/bagts"
+              className="bg-primary-yellow text-primary-blue font-bold px-5 py-2.5 rounded-lg hover:bg-primary-yellow/90 hover:scale-105 transition-all shadow-md"
+            >
+              Багц үзэх
             </a>
           </div>
 
@@ -66,14 +78,20 @@ export default function Navigation() {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-primary-darkBlue">
-            <a href="#discover" className="block py-2 hover:text-primary-yellow transition">
+            <a href={link('#discover')} className="block py-2 hover:text-primary-yellow transition" onClick={() => setIsMenuOpen(false)}>
               МАНАЙ ЭМНЭЛЭГ
             </a>
-            <a href="#preventive" className="block py-2 hover:text-primary-yellow transition">
+            <a href={link('#preventive')} className="block py-2 hover:text-primary-yellow transition" onClick={() => setIsMenuOpen(false)}>
               УРЬДЧИЛАН СЭРГИЙЛЭХ ҮЗЛЭГ
             </a>
-            <a href="#contact" className="block py-2 hover:text-primary-yellow transition">
+            <a href={link('#contact')} className="block py-2 hover:text-primary-yellow transition" onClick={() => setIsMenuOpen(false)}>
               ХОЛБОО БАРИХ
+            </a>
+            <a
+              href="/bagts"
+              className="mt-3 inline-block w-full text-center bg-primary-yellow text-primary-blue font-bold py-3 px-4 rounded-lg"
+            >
+              Багц үзэх
             </a>
           </div>
         )}
