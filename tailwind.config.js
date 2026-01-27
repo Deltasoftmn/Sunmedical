@@ -9,11 +9,11 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          blue: '#1a3a5f',
-          darkBlue: '#0f2538',
-          lightBlue: '#e8f0f7',
-          yellow: '#f4a261',
-          orange: '#e76f51',
+          blue: '#3557c9',
+          darkBlue: '#162760',
+          lightBlue: '#eef3fc',
+          yellow: '#ffffff',
+          orange: '#3557c9',
         },
       },
       keyframes: {
