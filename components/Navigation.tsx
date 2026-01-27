@@ -42,10 +42,6 @@ export default function Navigation() {
               МАНАЙ ЭМНЭЛЭГ
               <ChevronDown className="ml-1 h-4 w-4" />
             </a>
-            <a href="#services" className="hover:text-primary-yellow transition flex items-center whitespace-nowrap text-sm lg:text-base">
-              ЭМЧИЛГЭЭ ҮЙЛЧИЛГЭЭ
-              <ChevronDown className="ml-1 h-4 w-4" />
-            </a>
             <a href="#preventive" className="hover:text-primary-yellow transition flex items-center whitespace-nowrap text-sm lg:text-base">
               УРЬДЧИЛАН СЭРГИЙЛЭХ ҮЗЛЭГ
               <ChevronDown className="ml-1 h-4 w-4" />
@@ -72,9 +68,6 @@ export default function Navigation() {
           <div className="md:hidden py-4 border-t border-primary-darkBlue">
             <a href="#discover" className="block py-2 hover:text-primary-yellow transition">
               МАНАЙ ЭМНЭЛЭГ
-            </a>
-            <a href="#services" className="block py-2 hover:text-primary-yellow transition">
-              ЭМЧИЛГЭЭ ҮЙЛЧИЛГЭЭ
             </a>
             <a href="#preventive" className="block py-2 hover:text-primary-yellow transition">
               УРЬДЧИЛАН СЭРГИЙЛЭХ ҮЗЛЭГ

@@ -1,12 +1,24 @@
+import Image from 'next/image'
 import { Phone, Mail, MapPin } from 'lucide-react'
 
 export default function Footer() {
   return (
     <footer className="bg-primary-darkBlue text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* About */}
           <div>
+            <a href="/" className="inline-block mb-4">
+              <div className="bg-white rounded-lg px-3 py-2 inline-flex items-center">
+                <Image
+                  src="/logo.png"
+                  alt="Sun Medical Center"
+                  width={140}
+                  height={48}
+                  className="h-10 w-auto object-contain"
+                />
+              </div>
+            </a>
             <h3 className="text-xl font-bold mb-4">
               <span className="text-primary-yellow">SUN</span> MEDICAL
             </h3>
@@ -16,25 +28,12 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Services */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Эмчилгээ үйлчилгээ</h3>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#services" className="hover:text-primary-yellow">Нуруу нугас/ Мэдрэл</a></li>
-              <li><a href="#services" className="hover:text-primary-yellow">Мэс засал/ Гэмтэл</a></li>
-              <li><a href="#services" className="hover:text-primary-yellow">Зүрх судас / Ангиографи</a></li>
-              <li><a href="#services" className="hover:text-primary-yellow">Дотор/ Дотоод шүүрэл</a></li>
-              <li><a href="#services" className="hover:text-primary-yellow">Хүүхэд/ Эмэгтэй/ Шүд</a></li>
-              <li><a href="#services" className="hover:text-primary-yellow">Уламжлалт сэргээн засах</a></li>
-            </ul>
-          </div>
-
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Холбоос</h3>
             <ul className="space-y-2 text-sm text-gray-400">
               <li><a href="#discover" className="hover:text-primary-yellow">Бидний тухай</a></li>
-              <li><a href="#services" className="hover:text-primary-yellow">Үйлчилгээ</a></li>
+              <li><a href="#preventive" className="hover:text-primary-yellow">Үйлчилгээ</a></li>
               <li><a href="#preventive" className="hover:text-primary-yellow">Урьдчилан сэргийлэх үзлэг</a></li>
               <li><a href="#contact" className="hover:text-primary-yellow">Холбогдох</a></li>
               <li><a href="#" className="hover:text-primary-yellow">Цаг захиалах</a></li>

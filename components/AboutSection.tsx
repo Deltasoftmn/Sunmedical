@@ -41,30 +41,6 @@ export default function AboutSection() {
             </p>
           </div>
 
-          {/* World Map Section */}
-          <div className="mt-12 relative">
-            <div className="bg-primary-lightBlue rounded-lg p-8">
-              <div className="relative w-full h-64 flex items-center justify-center">
-                {/* Simplified World Map SVG */}
-                <svg viewBox="0 0 800 400" className="w-full h-full">
-                  {/* Continents simplified */}
-                  <path d="M100,150 Q150,100 200,150 T300,150 Q350,100 400,150 T500,150 Q550,100 600,150" 
-                        stroke="#1a3a5f" strokeWidth="2" fill="#1a3a5f" opacity="0.3"/>
-                  <path d="M150,200 Q200,150 250,200 T350,200 Q400,150 450,200" 
-                        stroke="#1a3a5f" strokeWidth="2" fill="#1a3a5f" opacity="0.3"/>
-                  <path d="M200,250 Q250,200 300,250 T400,250" 
-                        stroke="#1a3a5f" strokeWidth="2" fill="#1a3a5f" opacity="0.3"/>
-                  
-                  {/* Mongolia location pin */}
-                  <g transform="translate(350, 120)">
-                    <circle cx="0" cy="0" r="8" fill="#e76f51"/>
-                    <path d="M0,0 L-5,15 L0,12 L5,15 Z" fill="#e76f51"/>
-                  </g>
-                </svg>
-              </div>
-            </div>
-          </div>
-
           {/* Values */}
           <div className="grid md:grid-cols-3 gap-6 mt-12">
             <div className="text-center p-6 bg-primary-lightBlue rounded-lg">

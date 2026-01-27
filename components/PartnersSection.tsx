@@ -1,18 +1,25 @@
-export default function PartnersSection() {
-  const partners = [
-    { name: 'ISSCA', description: 'INTERNATIONAL SOCIETY FOR STEM CELL APPLICATION' },
-    { name: 'HISAR HOSPITAL', description: 'INTERCONTINENTAL' },
-    { name: 'ЭМД', description: 'ЭРҮҮЛ МЭНДИЙН ДААТГАЛЬБН ЕРБНХИЙ ГАЗАР' },
-    { name: 'Johannesstift Diakonie', description: '' },
-    { name: 'MOHOC', description: '' },
-    { name: 'Asифарм', description: '' },
-    { name: 'JOINT Venture Company', description: '' },
-    { name: 'MEMORIAL HOSPITALS GROUP', description: '' },
-    { name: 'Meril', description: 'More to Life' },
-    { name: 'JCI', description: '' },
-    { name: 'DELTA MEDICAL', description: '' },
-  ]
+import Image from 'next/image'
 
+const partners = [
+  { name: 'ISSCA', description: 'INTERNATIONAL SOCIETY FOR STEM CELL APPLICATION', logo: '/issca.png' },
+  { name: 'HISAR HOSPITAL', description: 'INTERCONTINENTAL', logo: '/Hisar.png' },
+  { name: 'ЭМД', description: 'ЭРҮҮЛ МЭНДИЙН ДААТГАЛЬБН ЕРБНХИЙ ГАЗАР', logo: '/emd.png' },
+  { name: 'Johannesstift Diakonie', description: '', logo: '/johannesstift.png' },
+  { name: 'MOHOC', description: '', logo: '/monos.png' },
+  { name: 'Азифарм', description: '', logo: '/azifarm.png' },
+  { name: 'JOINT Venture Company', description: '', logo: '/ivc.png' },
+  { name: 'MEMORIAL HOSPITALS GROUP', description: '', logo: '/memorial.png' },
+  { name: 'Meril', description: 'More to Life', logo: '/meril.png' },
+  { name: 'JCI', description: '', logo: '/jci.png' },
+  { name: 'DELTA MEDICAL', description: '', logo: '/delta.png' },
+  { name: 'National Defense Medical Center', description: '', logo: '/National.png' },
+  { name: 'Гэмтэл согог судлалын үндэсний төв', description: '', logo: '/gemtel.png' },
+  { name: 'Hospital', description: '', logo: '/Hospital.png' },
+  { name: '5.11', description: '', logo: '/5.11.png' },
+  { name: 'МЭИК', description: '', logo: '/meik.png' },
+]
+
+export default function PartnersSection() {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -30,13 +37,22 @@ export default function PartnersSection() {
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow border border-gray-200 text-center flex flex-col items-center justify-center min-h-[120px]"
+                className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow border border-gray-200 text-center flex flex-col items-center justify-center min-h-[140px]"
               >
-                <h3 className="text-lg font-semibold text-primary-blue mb-2">
+                <div className="relative w-full h-16 mb-3 flex items-center justify-center">
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    width={120}
+                    height={64}
+                    className="object-contain max-h-16 w-auto"
+                  />
+                </div>
+                <h3 className="text-base font-semibold text-primary-blue mb-1">
                   {partner.name}
                 </h3>
                 {partner.description && (
-                  <p className="text-xs text-gray-600 mt-2">
+                  <p className="text-xs text-gray-600">
                     {partner.description}
                   </p>
                 )}

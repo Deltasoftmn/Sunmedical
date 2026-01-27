@@ -4,14 +4,14 @@ import { Search } from 'lucide-react'
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-br from-primary-blue via-primary-darkBlue to-primary-blue text-white min-h-[600px] flex items-center">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-          backgroundSize: '40px 40px'
-        }}></div>
-      </div>
+    <section className="relative text-white min-h-[600px] flex items-center overflow-hidden">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: 'url(/image1.jpg)' }}
+      />
+      {/* Overlay for text readability */}
+      <div className="absolute inset-0 bg-primary-blue/70" />
 
       <div className="container mx-auto px-4 relative z-10 py-20">
         <div className="max-w-4xl mx-auto text-center">
@@ -40,22 +40,27 @@ export default function HeroSection() {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <button className="bg-white text-primary-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition flex items-center">
-              Цаг захиалах
-              <span className="ml-2">→</span>
-            </button>
-            <button className="bg-white text-primary-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition flex items-center">
+            <a
+              href="#preventive"
+              className="bg-white text-primary-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition flex items-center"
+            >
               Үйлчилгээ олох
               <span className="ml-2">→</span>
-            </button>
-            <button className="bg-white text-primary-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition flex items-center">
+            </a>
+            <a
+              href="#preventive"
+              className="bg-white text-primary-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition flex items-center"
+            >
               Эрүүл мэндийн үзлэг
               <span className="ml-2">→</span>
-            </button>
-            <button className="bg-white text-primary-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition flex items-center">
+            </a>
+            <a
+              href="#contact"
+              className="bg-white text-primary-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition flex items-center"
+            >
               Мэргэжилтний зөвлөгөө
               <span className="ml-2">→</span>
-            </button>
+            </a>
           </div>
         </div>
       </div>

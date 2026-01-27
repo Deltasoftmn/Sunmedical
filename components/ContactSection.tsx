@@ -51,12 +51,6 @@ export default function ContactSection() {
             </p>
           </div>
         </div>
-
-        <div className="mt-12 text-center">
-          <button className="bg-primary-yellow text-primary-blue px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition">
-            Цаг захиалах
-          </button>
-        </div>
       </div>
     </section>
   )
