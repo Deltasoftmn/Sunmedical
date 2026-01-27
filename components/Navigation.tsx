@@ -14,26 +14,26 @@ export default function Navigation() {
   const link = (hash: string) => (isBagts ? `/${hash}` : hash)
 
   return (
-    <nav className="bg-primary-blue text-white sticky top-0 z-50 shadow-md">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo - Left */}
-          <div className="flex items-center flex-shrink-0">
+    <nav className="bg-primary-blue text-white sticky top-0 z-50 shadow-md overflow-visible">
+      <div className="container mx-auto px-4 overflow-visible">
+        <div className="flex items-center justify-between h-16 overflow-visible">
+          {/* Logo - Left, enlarged, rectangular border, hanging from header */}
+          <div className="flex items-center flex-shrink-0 self-start">
             <a href="/" className="flex items-center">
               {!logoError ? (
-                <div className="relative h-10 w-auto bg-white rounded-lg px-2 py-1 flex items-center">
+                <div className="h-20 flex items-center justify-center bg-white border-2 border-white rounded px-3 py-2 shadow-xl">
                   <Image
                     src="/logo.png"
                     alt="Sun Medical Center Logo"
-                    width={120}
-                    height={40}
-                    className="h-8 w-auto object-contain"
+                    width={180}
+                    height={64}
+                    className="h-14 w-auto object-contain"
                     priority
                     onError={() => setLogoError(true)}
                   />
                 </div>
               ) : (
-                <div className="text-xl md:text-2xl font-bold">
+                <div className="h-20 flex items-center justify-center border-2 border-white rounded px-4 py-2 text-xl md:text-2xl font-bold">
                   <span className="text-white">SUN MEDICAL</span>
                   <span className="ml-2 text-xs md:text-sm text-gray-300">CENTER</span>
                 </div>
