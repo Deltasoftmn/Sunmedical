@@ -4,6 +4,8 @@ import AboutSection from '@/components/AboutSection'
 import VisionSection from '@/components/VisionSection'
 import PreventiveCheckupSection from '@/components/PreventiveCheckupSection'
 import EquipmentSection from '@/components/EquipmentSection'
+import InteriorSection from '@/components/InteriorSection'
+import InpatientSection from '@/components/InpatientSection'
 import PartnersSection from '@/components/PartnersSection'
 import ContactSection from '@/components/ContactSection'
 import Footer from '@/components/Footer'
@@ -19,6 +21,8 @@ export default function Home() {
       <AnimateIn animation="fade-in-up"><VisionSection /></AnimateIn>
       <AnimateIn animation="fade-in-up"><PreventiveCheckupSection /></AnimateIn>
       <AnimateIn animation="fade-in-up"><EquipmentSection /></AnimateIn>
+      <AnimateIn animation="fade-in-up"><InteriorSection /></AnimateIn>
+      <AnimateIn animation="fade-in-up"><InpatientSection /></AnimateIn>
       <AnimateIn animation="fade-in-up"><PartnersSection /></AnimateIn>
       <AnimateIn animation="fade-in-up"><ContactSection /></AnimateIn>
       <AnimateIn animation="fade-in"><Footer /></AnimateIn>
