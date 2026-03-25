@@ -5,19 +5,21 @@ import { Search } from 'lucide-react'
 export default function HeroSection() {
   return (
     <section className="relative text-white min-h-[600px] flex items-center overflow-hidden">
-      {/* Background Video (muted autoplay, no sound) */}
-      <video
-        className="absolute inset-0 h-full w-full object-cover"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        poster="/image1.jpg"
-        aria-hidden="true"
-      >
-        <source src="/videos/video1.mp4" type="video/mp4" />
-      </video>
+      {/* Background YouTube video (muted autoplay, no sound) */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            <iframe
+              className="pointer-events-none block h-[56.25vw] min-h-full w-[177.78vh] min-w-full"
+              src="https://www.youtube-nocookie.com/embed/ukecU0rqwKg?autoplay=1&mute=1&controls=0&rel=0&playsinline=1&loop=1&playlist=ukecU0rqwKg&modestbranding=1&iv_load_policy=3"
+              title="Sun Medical Center background video"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              referrerPolicy="strict-origin-when-cross-origin"
+              aria-hidden="true"
+            />
+          </div>
+        </div>
+      </div>
       {/* Overlay for text readability */}
       <div className="absolute inset-0 bg-primary-blue/70" />
 

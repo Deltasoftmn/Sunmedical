@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import StyledVideoPlayer from '@/components/media/StyledVideoPlayer'
+import YouTubeEmbed from '@/components/media/YouTubeEmbed'
 
 export default function AboutSection() {
   return (
@@ -44,7 +44,15 @@ export default function AboutSection() {
 
           {/* Intro Video (with sound) */}
           <div className="mx-auto mb-12 max-w-5xl">
-            <StyledVideoPlayer src="/videos/video2.mp4" poster="/image1.jpg" title="Sun Medical Center — Танилцуулга" />
+            <div className="overflow-hidden rounded-2xl border border-gray-200 bg-black shadow-sm ring-1 ring-black/5">
+              <div className="aspect-video">
+                <YouTubeEmbed
+                  videoId="C8WKTn7yMP4"
+                  title="Sun Medical Center — Танилцуулга"
+                  className="h-full w-full"
+                />
+              </div>
+            </div>
           </div>
 
           {/* Values */}
