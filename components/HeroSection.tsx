@@ -5,11 +5,19 @@ import { Search } from 'lucide-react'
 export default function HeroSection() {
   return (
     <section className="relative text-white min-h-[600px] flex items-center overflow-hidden">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/image1.jpg)' }}
-      />
+      {/* Background Video (muted autoplay, no sound) */}
+      <video
+        className="absolute inset-0 h-full w-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        poster="/image1.jpg"
+        aria-hidden="true"
+      >
+        <source src="/videos/video1.mp4" type="video/mp4" />
+      </video>
       {/* Overlay for text readability */}
       <div className="absolute inset-0 bg-primary-blue/70" />
 

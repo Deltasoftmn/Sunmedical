@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import StyledVideoPlayer from '@/components/media/StyledVideoPlayer'
 
 export default function AboutSection() {
   return (
@@ -39,6 +40,11 @@ export default function AboutSection() {
               оношилгооны тоног төхөөрөмж ашиглан Монгол Улс болон олон улсад мөрдөгдөж буй 
               эмнэлгийн стандартыг ханган ажиллаж байна.
             </p>
+          </div>
+
+          {/* Intro Video (with sound) */}
+          <div className="mx-auto mb-12 max-w-5xl">
+            <StyledVideoPlayer src="/videos/video2.mp4" poster="/image1.jpg" title="Sun Medical Center — Танилцуулга" />
           </div>
 
           {/* Values */}

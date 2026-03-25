@@ -7,11 +7,11 @@ import Image from 'next/image'
 
 export default function Navigation() {
   const pathname = usePathname()
-  const isBagts = pathname === '/bagts'
+  const isSubpage = pathname === '/bagts' || pathname === '/emchilgee' || pathname === '/cabinet' || pathname === '/emch'
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [logoError, setLogoError] = useState(false)
 
-  const link = (hash: string) => (isBagts ? `/${hash}` : hash)
+  const link = (hash: string) => (isSubpage ? `/${hash}` : hash)
 
   return (
     <nav className="bg-primary-blue text-white sticky top-0 z-50 shadow-md overflow-visible">
@@ -49,6 +49,15 @@ export default function Navigation() {
             <a href={link('#preventive')} className="hover:text-primary-yellow transition whitespace-nowrap text-sm lg:text-base">
               УРЬДЧИЛАН СЭРГИЙЛЭХ ҮЗЛЭГ
             </a>
+            <a href="/emchilgee" className="hover:text-primary-yellow transition whitespace-nowrap text-sm lg:text-base">
+              ЭМЧИЛГЭЭ
+            </a>
+            <a href="/cabinet" className="hover:text-primary-yellow transition whitespace-nowrap text-sm lg:text-base">
+              КАБИНЕТ
+            </a>
+            <a href="/emch" className="hover:text-primary-yellow transition whitespace-nowrap text-sm lg:text-base">
+              ЭМЧ НАР
+            </a>
             <a href={link('#contact')} className="hover:text-primary-yellow transition whitespace-nowrap text-sm lg:text-base">
               ХОЛБОО БАРИХ
             </a>
@@ -83,6 +92,15 @@ export default function Navigation() {
             </a>
             <a href={link('#preventive')} className="block py-2 hover:text-primary-yellow transition" onClick={() => setIsMenuOpen(false)}>
               УРЬДЧИЛАН СЭРГИЙЛЭХ ҮЗЛЭГ
+            </a>
+            <a href="/emchilgee" className="block py-2 hover:text-primary-yellow transition" onClick={() => setIsMenuOpen(false)}>
+              ЭМЧИЛГЭЭ
+            </a>
+            <a href="/cabinet" className="block py-2 hover:text-primary-yellow transition" onClick={() => setIsMenuOpen(false)}>
+              КАБИНЕТ
+            </a>
+            <a href="/emch" className="block py-2 hover:text-primary-yellow transition" onClick={() => setIsMenuOpen(false)}>
+              ЭМЧ НАР
             </a>
             <a href={link('#contact')} className="block py-2 hover:text-primary-yellow transition" onClick={() => setIsMenuOpen(false)}>
               ХОЛБОО БАРИХ
