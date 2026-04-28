@@ -17,7 +17,7 @@ export default function ContactSection() {
               <Phone className="h-8 w-8" />
             </div>
             <h3 className="font-semibold mb-2">Утас</h3>
-            <p className="text-gray-200">+(976) 7777-7500</p>
+            <p className="text-gray-200">+(976) 80370044</p>
           </div>
 
           <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 text-center hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
@@ -26,7 +26,7 @@ export default function ContactSection() {
             </div>
             <h3 className="font-semibold mb-2">Имэйл</h3>
             <p className="text-gray-200 text-sm break-all">
-              Sunmedical.ulaanbaatar2025@sunnmedical.mn
+              info@sunhospital.mn
             </p>
           </div>
 
@@ -46,8 +46,9 @@ export default function ContactSection() {
             </div>
             <h3 className="font-semibold mb-2">Ажиллах цаг</h3>
             <p className="text-gray-200 text-sm">
-              Даваа-Баасан: 08:30-17:00<br />
-              Бямба-Ням: Амарна
+              Даваа-Баасан: 08:00-16:00<br />
+              Бямба: 09:00-14:00<br />
+              Ням: Амарна
             </p>
           </div>
         </div>

@@ -14,7 +14,7 @@ const BAGTS_IMAGES = [
   { src: '/bagts4.png', alt: 'Багц 4' },
 ] as const
 
-const CONTACT = { phone: '7777-7500', address: 'ХУД 7-р хороо Яармаг Энканто Оранж тауны зүүн жигүүр' }
+const CONTACT = { phone: '80370044', address: 'ХУД 7-р хороо Яармаг Энканто Оранж тауны зүүн жигүүр' }
 
 // 1. Багш нарт — price list
 const bagshNart = {

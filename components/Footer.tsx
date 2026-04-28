@@ -46,11 +46,11 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-gray-400">
               <li className="flex items-start">
                 <Phone className="h-5 w-5 mr-2 mt-0.5 text-primary-yellow" />
-                +(976) 7777-7500
+                +(976) 80370044
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-2 mt-0.5 text-primary-yellow" />
-                <span className="break-all">Sunmedical.ulaanbaatar2025@sunnmedical.mn</span>
+                <span className="break-all">info@sunhospital.mn</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 mt-0.5 text-primary-yellow" />

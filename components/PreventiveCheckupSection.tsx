@@ -207,10 +207,10 @@ export default function PreventiveCheckupSection() {
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
               <a
-                href="tel:77777500"
+                href="tel:80370044"
                 className="bg-primary-yellow text-primary-blue px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition"
               >
-                Үзлэгт хамрагдах: 7777-7500
+                Үзлэгт хамрагдах: 80370044
               </a>
               <a
                 href="mailto:info@sunhospital.mn"
