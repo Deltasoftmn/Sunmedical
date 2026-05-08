@@ -1,5 +1,7 @@
 import Navigation from '@/components/Navigation'
 import HeroSection from '@/components/HeroSection'
+import FeaturesBar from '@/components/FeaturesBar'
+import ServicesSection from '@/components/ServicesSection'
 import AboutSection from '@/components/AboutSection'
 import VisionSection from '@/components/VisionSection'
 import PreventiveCheckupSection from '@/components/PreventiveCheckupSection'
@@ -17,12 +19,14 @@ export default function Home() {
     <main className="min-h-screen">
       <Navigation />
       <HeroSection />
+      <AnimateIn animation="fade-in-up"><FeaturesBar /></AnimateIn>
+      <AnimateIn animation="fade-in-up"><ServicesSection /></AnimateIn>
       <AnimateIn animation="fade-in-up"><AboutSection /></AnimateIn>
-      <AnimateIn animation="fade-in-up"><VisionSection /></AnimateIn>
-      <AnimateIn animation="fade-in-up"><PreventiveCheckupSection /></AnimateIn>
+      {/* <AnimateIn animation="fade-in-up"><VisionSection /></AnimateIn> */}
+      {/* <AnimateIn animation="fade-in-up"><PreventiveCheckupSection /></AnimateIn>
       <AnimateIn animation="fade-in-up"><EquipmentSection /></AnimateIn>
       <AnimateIn animation="fade-in-up"><InteriorSection /></AnimateIn>
-      <AnimateIn animation="fade-in-up"><InpatientSection /></AnimateIn>
+      <AnimateIn animation="fade-in-up"><InpatientSection /></AnimateIn> */}
       <AnimateIn animation="fade-in-up"><PartnersSection /></AnimateIn>
       <AnimateIn animation="fade-in-up"><ContactSection /></AnimateIn>
       <AnimateIn animation="fade-in"><Footer /></AnimateIn>

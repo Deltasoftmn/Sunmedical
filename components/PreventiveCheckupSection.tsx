@@ -196,30 +196,7 @@ export default function PreventiveCheckupSection() {
             </div>
           </div>
 
-          {/* Partnership CTA */}
-          <div id="package-cta" className="bg-gradient-to-r from-primary-blue to-primary-darkBlue text-white rounded-lg p-8 text-center">
-            <h3 className="text-2xl font-bold mb-4">
-              Хамтран ажиллах санал хүргүүлэх
-            </h3>
-            <p className="text-lg mb-6 max-w-2xl mx-auto">
-              Манай эмнэлэг нь та бүхэнтэй байгууллагын ажилчдын урьдчилсан сэргийлэх 
-              үзлэгийн багцаар эрүүл мэндийн үйлчилгээ үзүүлж, хамтран ажиллах хүсэлтэй байна.
-            </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <a
-                href="tel:80370044"
-                className="bg-primary-yellow text-primary-blue px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition"
-              >
-                Үзлэгт хамрагдах: 80370044
-              </a>
-              <a
-                href="mailto:info@sunhospital.mn"
-                className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition"
-              >
-                Имэйл илгээх
-              </a>
-            </div>
-          </div>
+          {/* Removed Partnership CTA */}
         </div>
       </div>
     </section>

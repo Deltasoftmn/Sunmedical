@@ -1,82 +1,114 @@
+'use client'
+
 import Image from 'next/image'
-import YouTubeEmbed from '@/components/media/YouTubeEmbed'
+import { CheckCircle2, Users, UserRound, HeartPulse, Building2, ArrowRight } from 'lucide-react'
+import CountUp from './CountUp'
+
+const stats = [
+  {
+    icon: Users,
+    number: '20+',
+    label: 'ЖИЛИЙН ТУРШЛАГА',
+  },
+  {
+    icon: UserRound,
+    number: '100+',
+    label: 'МЭРГЭШСЭН ЭМЧ, МЭРГЭЖИЛТЭН',
+  },
+  {
+    icon: HeartPulse,
+    number: '200,000+',
+    label: 'СЭТГЭЛ ХАНАМЖТАЙ ӨВЧТӨН',
+  },
+  {
+    icon: Building2,
+    number: '10+',
+    label: 'ТӨВ, ТАСАГ',
+  },
+]
 
 export default function AboutSection() {
   return (
-    <section id="discover" className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto">
-          {/* Header with title and logo area */}
-          <div className="flex items-start justify-between mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-blue">
-              МАНАЙ ЭМНЭЛЭГ
+    <section id="about" className="bg-white">
+      {/* Split Layout: Text and Image */}
+      <div className="container mx-auto px-4 max-w-[1400px] py-16 md:py-24">
+        <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+
+          {/* Left Column: Text */}
+          <div className="flex-1 w-full animate-slide-in-left">
+            <span className="text-xs md:text-sm font-bold tracking-widest text-gray-400 uppercase">
+              БИДНИЙ ТУХАЙ
+            </span>
+            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-primary-darkBlue mt-4 mb-6 leading-tight">
+              ЯАГААД SUN MEDICAL <br className="hidden lg:block" /> CENTER-ИЙГ СОНГОХ ВЭ?
             </h2>
-            <div className="hidden md:block">
-              <div className="relative w-32 h-32 bg-white rounded-lg p-4 shadow-md flex items-center justify-center">
-                <Image
-                  src="/logo.png"
-                  alt="Sun Medical Center Logo"
-                  width={128}
-                  height={128}
-                  className="object-contain"
-                />
-              </div>
-            </div>
-          </div>
 
-          {/* Main content */}
-          <div className="text-center mb-12">
-            <p className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-4xl mx-auto mb-8">
-              Монгол Улсдаа дэлхийн жишигт хүрсэн, орчин үеийн чанартай эмнэлгийн эмчилгээ, 
-              үйлчилгээг нэвтрүүлэх, ард иргэдийнхээ эрүүл мэндийг сахин хамгаалах, гадаад эмч 
-              нарын чанартай эмчилгээ, оношилгоог эх орондоо авах боломжийг иргэддээ бүрдүүлэх 
-              зорилгоор дотоодын 100 хувийн хөрөнгө оруулалттайгаар байгуулагдсан.
+            <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-2xl">
+              Бид өвчтөн бүрт аюулгүй, чанартай, хүртээмжтэй эмнэлгийн тусламж үйлчилгээ үзүүлэхийг эрхэмлэдэг. Орчин үеийн технологи, мэргэжлийн баг, хүний төлөөх хандлага бол бидний ялгарах үнэ цэнэ юм.
             </p>
-            <p className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-4xl mx-auto">
-              Манай эмнэлэг нь Нэгдсэн эмнэлгийн чиглэлээр 2028.07.07 хүртэл хүчинтэй тусгай 
-              зөвшөөрөлтэйгээр үйл ажиллагаа явуулж, эмнэлгийн тусламж үйлчилгээг үзүүлж байна. 
-              Шинжилгээ, оношилгооны төв, яаралтай тусламж, гэмтэл, мэс засал, амбулатори буюу 
-              нарийн мэргэжлийн кабинетуудтай бөгөөд чадварлаг эмч мэргэжилтнүүд сүүлийн үеийн 
-              оношилгооны тоног төхөөрөмж ашиглан Монгол Улс болон олон улсад мөрдөгдөж буй 
-              эмнэлгийн стандартыг ханган ажиллаж байна.
-            </p>
+
+            <ul className="space-y-4 mb-10">
+              <li className="flex items-center text-gray-700">
+                <CheckCircle2 className="w-6 h-6 text-primary-darkBlue mr-4 flex-shrink-0" />
+                <span className="font-medium">Орчин үеийн дэвшилтэт тоног төхөөрөмж</span>
+              </li>
+              <li className="flex items-center text-gray-700">
+                <CheckCircle2 className="w-6 h-6 text-primary-darkBlue mr-4 flex-shrink-0" />
+                <span className="font-medium">Олон улсын стандартын чанар, аюулгүй байдал</span>
+              </li>
+              <li className="flex items-center text-gray-700">
+                <CheckCircle2 className="w-6 h-6 text-primary-darkBlue mr-4 flex-shrink-0" />
+                <span className="font-medium">Туршлагатай, мэргэшсэн эмч, мэргэжилтнүүд</span>
+              </li>
+            </ul>
+
+            <a href="/about" className="bg-primary-darkBlue text-white px-8 py-4 rounded-lg font-bold text-sm tracking-wider hover:bg-primary-blue hover:-translate-y-1 transition-all duration-300 shadow-lg inline-flex items-center group w-fit">
+              ДЭЛГЭРЭНГҮЙ МЭДЭЭЛЭЛ
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
           </div>
 
-          {/* Intro Video (with sound) */}
-          <div className="mx-auto mb-12 max-w-5xl">
-            <div className="overflow-hidden rounded-2xl border border-gray-200 bg-black shadow-sm ring-1 ring-black/5">
-              <div className="aspect-video">
-                <YouTubeEmbed
-                  videoId="C8WKTn7yMP4"
-                  title="Sun Medical Center — Танилцуулга"
-                  className="h-full w-full"
-                />
-              </div>
+          {/* Right Column: Image */}
+          <div className="flex-1 w-full relative h-[400px] md:h-[600px] rounded-2xl overflow-hidden shadow-2xl animate-fade-in">
+            {/* Replace this div with an actual Image component when you have the photo */}
+            <div className="absolute inset-0 bg-gray-200">
+              <Image
+                src="/our.png"
+                alt="Sun Medical Center Doctors"
+                fill
+                className="object-cover"
+              // Uncomment the line below to fallback to gray if image is missing
+              // onError={(e) => { e.currentTarget.style.display = 'none'; }}
+              />
             </div>
           </div>
 
-          {/* Values */}
-          <div className="grid md:grid-cols-3 gap-6 mt-12">
-            <div className="text-center p-6 bg-primary-lightBlue rounded-lg hover:-translate-y-1 hover:shadow-md transition-all duration-300">
-              <h3 className="text-xl font-bold text-primary-blue mb-2">Анхаарал халамж</h3>
-              <p className="text-gray-600">Өвчтөн бүрт зориулсан анхаарал</p>
-            </div>
-            <div className="text-center p-6 bg-primary-lightBlue rounded-lg hover:-translate-y-1 hover:shadow-md transition-all duration-300">
-              <h3 className="text-xl font-bold text-primary-blue mb-2">Чин сэтгэл</h3>
-              <p className="text-gray-600">Сэтгэлээсээ үзүүлсэн халамж</p>
-            </div>
-            <div className="text-center p-6 bg-primary-lightBlue rounded-lg hover:-translate-y-1 hover:shadow-md transition-all duration-300">
-              <h3 className="text-xl font-bold text-primary-blue mb-2">Тэвчээр</h3>
-              <p className="text-gray-600">Ойлголт, энэрэнгүй үйлчилгээ</p>
-            </div>
-          </div>
+        </div>
+      </div>
 
-          {/* Mission */}
-          <div className="mt-12 p-8 bg-gradient-to-r from-primary-blue to-primary-darkBlue text-white rounded-lg">
-            <h3 className="text-2xl font-bold mb-4">Эрхэм зорилго</h3>
-            <p className="text-lg">
-              Биднийг зорин ирсэн үйлчлүүлэгч бүрт чин сэтгэлээсээ тусламж үйлчилгээ үзүүлнэ
-            </p>
+      {/* Bottom Banner: Statistics */}
+      <div className="bg-primary-darkBlue w-full py-16 px-4">
+        <div className="container mx-auto max-w-[1400px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6 divide-y sm:divide-y-0 sm:divide-x divide-white/20">
+            {stats.map((stat, index) => {
+              const Icon = stat.icon
+              return (
+                <div
+                  key={index}
+                  className={`flex items-center justify-center lg:justify-start ${index !== 0 ? 'pt-8 sm:pt-0 lg:pl-10' : ''}`}
+                >
+                  <Icon className="w-12 h-12 lg:w-16 lg:h-16 text-white mr-6 flex-shrink-0" strokeWidth={1.5} />
+                  <div className="flex flex-col">
+                    <span className="text-4xl lg:text-5xl font-serif font-bold text-white mb-1">
+                      <CountUp text={stat.number} />
+                    </span>
+                    <span className="text-[10px] lg:text-xs tracking-widest text-gray-300 uppercase font-medium">
+                      {stat.label}
+                    </span>
+                  </div>
+                </div>
+              )
+            })}
           </div>
         </div>
       </div>
