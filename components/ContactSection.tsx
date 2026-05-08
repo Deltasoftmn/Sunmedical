@@ -34,7 +34,7 @@ export default function ContactSection() {
                 href="tel:80370044"
                 className="bg-white text-[#031628] px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all shadow-xl text-center hover:-translate-y-1"
               >
-                Үзлэгт хамрагдах: 80370044
+                Үзлэгт хамрагдах: 77777500
               </a>
               <a
                 href="mailto:info@sunhospital.mn"
@@ -52,6 +52,7 @@ export default function ContactSection() {
                 <Phone className="h-6 w-6 text-[#3b82f6]" />
               </div>
               <h3 className="font-semibold text-lg mb-2">Утас</h3>
+              <p className="text-gray-400">+(976) 77777500</p>
               <p className="text-gray-400">+(976) 80370044</p>
             </div>
 

@@ -55,6 +55,7 @@ export default function Footer() {
                 <div className="border border-[#3b82f6]/50 rounded-full p-2 mr-4 flex-shrink-0">
                   <Phone className="h-4 w-4 text-[#3b82f6]" />
                 </div>
+                <span>+(976) 7777-7500</span>
                 <span>+(976) 80370044</span>
               </li>
               <li className="flex items-center">
@@ -79,7 +80,8 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 mt-4 text-center md:text-left text-sm text-gray-500">
-          <p>&copy; 2025 Sun Medical Center. Бүх эрх хуулиар хамгаалагдсан.</p>
+          <p>&copy; 2026 Sun Medical Center Ulaanbaatar. Бүх эрх хуулиар хамгаалагдсан.</p>
+          <a href='www.deltaosft.mn'>Вэб сайт хөгжүүлсэн Deltasoft llc </a>
         </div>
       </div>
     </footer>
